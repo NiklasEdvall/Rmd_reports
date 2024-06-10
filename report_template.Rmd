@@ -1,0 +1,32 @@
+---
+title: "Report for subject: `r subs[i]`"
+author: "Niklas Edvall"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+The variable of this subject happened to be `r as.character(vars[i])`
+
+## Figure 1
+
+With some explanatory text here.
+
+```{r, echo=FALSE}
+knitr::include_graphics(paste("figures/", subs[i], "-", fig1, sep=""))
+```
+
+## Figure 2
+
+Here is also text, slighty longer.
+
+```{r, echo=FALSE}
+knitr::include_graphics(paste("figures/", subs[i], "-", fig2, sep=""))
+```
+
+## Figure 3
+
+No text for figure three. No wait, this is text.
+
+```{r, echo=FALSE}
+knitr::include_graphics(paste("figures/", subs[i], "-", fig3, sep=""))
+```
